@@ -1,0 +1,52 @@
+// *** LIBRARIES *** //
+
+#include <Adafruit_NeoPixel.h>
+
+// *** DEFINES *** //
+
+#define PIN 6
+#define NUMPIXELS 8
+
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+// *** INTS *** //
+
+// for rgb values
+
+int Redval 
+int Greenval
+int Blueval 
+
+// for potentiometers
+
+int potenR
+int potenG
+int potenB
+
+void setup(){
+
+pixels.begin(); // initialize the neo pixels
+pixels.clear(); // clear all pixels on the strip
+
+}
+
+void loop(){
+
+// analog reads for reading the values of 3 potentiometers
+
+potenR = analogRead(0);
+potenG = analogRead(1);
+potenB = analogRead(2);
+
+// map functions for converting potentiometer values to rgb values 
+
+Redval = map(poten0, 0, 1023, 0, 255);
+Greebval = map(poten1, 0, 1023, 0, 255);
+Blueval = map(poten2, 0, 1023, 0, 255);
+
+// set leds using converted potentiometer values
+
+for(int pixels = 0, pixels < NUMPIXELS, pixels++){
+    pixels.setPixelColor(pixels, pixels.Color(Redval, Greenval, Blueval);
+}
+}
