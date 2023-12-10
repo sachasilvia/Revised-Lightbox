@@ -40,9 +40,9 @@ potenB = analogRead(2);
 
 // map functions for converting potentiometer values to rgb values 
 
-Redval = map(poten0, 0, 1023, 0, 255);
-Greebval = map(poten1, 0, 1023, 0, 255);
-Blueval = map(poten2, 0, 1023, 0, 255);
+Redval = map(potenR, 0, 1023, 0, 255);
+Greebval = map(potenG, 0, 1023, 0, 255);
+Blueval = map(potenB, 0, 1023, 0, 255);
 
 // set leds using converted potentiometer values
 
